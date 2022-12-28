@@ -3,76 +3,61 @@
 
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@400;700&display=swap');
-header{
+@media (max-width:1024px){
+    .header{
+        width: 1024px;
+        margin: 0 auto;
+    }
+    div.nav{
+        width: 900px ;
+        margin-left: 60px;
+    }
+}
+.header{
     display: flex;
-    margin-left:50px;
-    margin-top: 10px;
+    justify-content: space-between;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 15px;
 }
-.header__connection{
-    margin-left: 150px;
-    display: flex
+.header__left{
+    display: flex;
+    gap: 20px;
 }
-.header__connection img {
-    height: 40px;
-    width: 40px;
-}
-span{
-    color: #FF4E00;
-}
-.header__logo{
-    margin-right: 120px;
-    margin-left: 50px;
-}
-.header__rating .rating{
-    margin: 5px;
-}    
 .header__rating{
     display: flex;
-    margin-right: 160px;
-    width: 30px;
+    align-items: center;
+    gap: 5px;
 }
-.header__rating img{
-    height: 40px;
-    width: 40px;
-}
-.header__account{
-    margin-right: 22px;
-    display: flex;
-    width: 30px;
-    margin-left: 290px;
 
+.header__center{
+    display:flex;
 }
-.header__account img{
-    height: 30px;
-    width: 30px;
+.header__login{
+    display: flex;
+    
+}
+.login__img{
     margin-right: 5px;
 }
 .header__mobile{
+    display:flex;
+    margin-left: 20px;
+}
+.header__right{
+    display: flex; 
+    gap: 30px;
+}
+.header__whatsapp{
     display: flex;
-    width: 30px;
-    margin-left: 80px ;
+}
+.whatsapp__img{
+    margin-right: 10px;
 }
 
-.connection__img{
-    display: flex;
-    margin-left: 400px;
-}
-.connection{
-    margin-left: 10px;
-    width: 60px;
-    height: 25px;
-}
-.header__mobile img{
-    height: 30px;
-    width: 30px;
-}
-.connection__number{
-    margin-left: 30px;
-    width: 130px;
-}
-.header__connection{
-    display: flex;
-    margin-left: 200px;
+
+span{
+    color: #FF4E00;
 }
 nav{ 
     background-color: #001156;
@@ -89,11 +74,13 @@ nav{
 }
 
 .marketing{
-    background-image:url(./img/бассейн.png) ;
+    background-image:url(/img/бассейн.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
     text-align: center;
+    align-items: center;
+    margin: auto;
 }
 .marketing__title {
     display: inline-block;
@@ -121,6 +108,7 @@ button{
     margin-top: 50px;
     border-radius: 8px;
 }
+
 .orange{
     background-color: #FF4E00;
     color: white;
@@ -141,7 +129,6 @@ button:last-child{
 }
 .menu {
     width: 1920px;
-    height: 1080px;
     background-color: #F6F7FB;
     background-repeat: no-repeat;
     background-position: center center;
