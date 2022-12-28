@@ -89,7 +89,7 @@ nav{
 }
 
 .marketing{
-    background-image:url(/img/бассейн.png) ;
+    background-image:url(./img/бассейн.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
